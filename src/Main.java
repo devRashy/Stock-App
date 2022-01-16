@@ -1,9 +1,10 @@
-
+import java.util.Scanner;
 
 public class Main {
 
     public static void main (String[] args){
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the price you want to buy the shares");
         Stock abcCompany = new Stock();
         abcCompany.buy(36.6,2000);
         abcCompany.buy(39.7, 3000);
