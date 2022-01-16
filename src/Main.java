@@ -4,11 +4,13 @@ public class Main {
 
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the price you want to buy the shares");
+        System.out.println("Enter the buying price");
+        double buyPrice = scanner.nextDouble();
+        System.out.println("Enter the selling price");
+        double sellingPrice = scanner.nextDouble();
         Stock abcCompany = new Stock();
-        abcCompany.buy(36.6,2000);
-        abcCompany.buy(39.7, 3000);
-        abcCompany.sell(42.9, 1000);
+        abcCompany.buy(buyPrice,2000);
+        abcCompany.sell(sellingPrice, 1000);
         System.out.println(abcCompany.getShares());
         System.out.println(abcCompany.getPrice());
         System.out.println(abcCompany.getAveragePrice());
